@@ -1,10 +1,21 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: index
+title: Front End Findings | Home
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+
+	<h1>Front End Findings</h1>
+
+	<h3>I'm a front end developer.</h3>
+
+	<p>I'm always stumbling across weird quirks in the myriad of browsers we have to support these days.</p>
+
+	<p>It used to be Internet Explorer, now it is Android.</p>
+
+	<p>This blog is my little place to record all of these oddities so that next time I encounter one I know what to do.</p>
+
+  <h2>Posts</h2>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
