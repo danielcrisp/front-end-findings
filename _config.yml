@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: Front End Findings
 markdown: redcarpet
 pygments: true
+baseurl: /front-end-findings
