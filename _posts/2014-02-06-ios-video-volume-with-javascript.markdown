@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "iOS - video volume with JavaScript"
-categories: ios video javascript
+categories: ios video javascript html5
+disqus: y
+share: y
 ---
 
 Apple does not allow us to change the volume of videos using JavaScript. The user must change the volume with the device hardware controls.

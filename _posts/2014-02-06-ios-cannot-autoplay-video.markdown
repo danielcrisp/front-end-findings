@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  "iOS - cannot autoplay video"
-categories: ios video
+categories: ios video html5
+disqus: y
+share: y
 ---
 
 Apple disabled autoplay for videos.

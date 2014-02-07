@@ -2,6 +2,8 @@
 layout: post
 title:  "Android @font-face bug"
 categories: android css bug
+disqus: y
+share: y
 ---
 
 The version of Chrome used as the default browser in some versions of Android has a bug that means web fonts are not rendered correctly when the tablet is in portrait mode.

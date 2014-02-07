@@ -2,6 +2,8 @@
 layout: post
 title:  "Galaxy S4 border-radius"
 categories: css android bug
+disqus: y
+share: y
 ---
 
 [caniuse.com](http://caniuse.com/#feat=border-radius) reports that an S4 does indeed support `border-radius` however you might find otherwise if you just use the following CSS:

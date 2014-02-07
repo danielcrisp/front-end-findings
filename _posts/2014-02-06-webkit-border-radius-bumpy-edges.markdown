@@ -2,6 +2,8 @@
 layout: post
 title:  "WebKit border-radius bumpy edges"
 categories: webkit css android
+disqus: y
+share: y
 ---
 
 Older versions of WebKit do not render borders correctly when combining `border-radius` and a large border width.
