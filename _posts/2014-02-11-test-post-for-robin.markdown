@@ -3,7 +3,7 @@ layout: post
 title:  "Test post for Robin"
 disqus: n
 share: n
-published: false
+published: true
 ---
 
 This is a test post
