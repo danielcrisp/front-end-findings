@@ -10,12 +10,15 @@ I needed to find out if it was possible to embed a responsive site inside an iFr
 
 Turns out it works but you need to make sure the host page has the following:
 
+{% highlight html %}
     <meta name="viewport" content="width=device-width">
+{% endhighlight %}
 
 Otherwise you end up with the desktop view on iOS because the browser zooms out.
 
 In order to fill the page so you can't see that the site is in an iFrame you can style the host page like this:
 
+{% highlight css %}
 	html, body {
 		height: 100%;
 	}
@@ -28,6 +31,7 @@ In order to fill the page so you can't see that the site is in an iFrame you can
 		height: 100%;
 		border: none;
 	}
+{% endhighlight %}
 
 The target site will _respond_ according to the iFrame's dimensions. So if your iFrame is only 320px wide but the host page is 1280px wide you will see the mobile version of the site in the iFrame.
 
