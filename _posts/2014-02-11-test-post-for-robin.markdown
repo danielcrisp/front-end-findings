@@ -7,3 +7,5 @@ published: true
 ---
 
 This is a test post
+
+* Wowee, I'm on Github.
