@@ -19,18 +19,18 @@ Otherwise you end up with the desktop view on iOS because the browser zooms out.
 In order to fill the page so you can't see that the site is in an iFrame you can style the host page like this:
 
 {% highlight css %}
-	html, body {
-		height: 100%;
-	}
-	body {
-		margin: 0;
-		overflow: hidden;
-	}
-	iframe {
-		width: 100%;
-		height: 100%;
-		border: none;
-	}
+    html, body {
+        height: 100%;
+    }
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
 {% endhighlight %}
 
 The target site will _respond_ according to the iFrame's dimensions. So if your iFrame is only 320px wide but the host page is 1280px wide you will see the mobile version of the site in the iFrame.
@@ -39,7 +39,7 @@ The target site will _respond_ according to the iFrame's dimensions. So if your 
 
 Although not strictly related it seems that elements that use `-webkit-overflow-scrolling: touch;` in the target site will not be scrollable. I've noticed this behaviour on an iOS 7 iPad (tested using the iOS Simulator only). iOS 6.1 seems to work but the scrolling effect can be a bit jittery.
 
-I've also found that iOS will sometimes crash or fail to completely load the target site. Again I have only been testing on the iOS Simulator and this only occured when the host page was on `localhost` but the target site was on the web.
+I've also found that iOS will sometimes crash or fail to completely load the target site. Again I have only been testing on the iOS Simulator and this only occured when the host page was on `localhost` but the target site was on the web. Using a local target site fixed the problem but of course this would be no good for production sites.
 
 With IE7 I had two sets of scrollbars visible but it is probably possible to fix this.
 
